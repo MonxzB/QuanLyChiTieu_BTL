@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context=".ThemKhoanChi">
+
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -19,9 +21,9 @@
                 android:id="@+id/imageButton6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:backgroundTint="#FFFFFF"
-                android:src="@drawable/ic_baseline_arrow_back_24"
-                android:layout_marginTop="10dp"/>
+                android:src="@drawable/ic_baseline_arrow_back_24" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -32,27 +34,68 @@
                 android:textAlignment="center"
                 android:textColor="#4458C8"
                 android:textSize="22sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtnhapchi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="60dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Nhập tên khoản chi"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtsochi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="60dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Nhập số chi"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="#000000" />
         </LinearLayout>
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
             android:text="Phân Loại"
             android:textAlignment="viewStart"
             android:textColor="#4458C8"
             android:textSize="22sp"
-            android:textStyle="bold"
-            android:layout_marginTop="185dp"
-            android:layout_marginLeft="30dp"/>
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="30dp">
+            android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/imageButton7"
@@ -71,14 +114,14 @@
                 android:textAlignment="viewStart"
                 android:textColor="#000000"
                 android:textSize="18sp"
-                tools:text="Ăn uống" />
+                />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginLeft="30dp">
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/imageButton8"
@@ -111,7 +154,7 @@
             android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/Btn_CfChiTieu"
             android:layout_width="319dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

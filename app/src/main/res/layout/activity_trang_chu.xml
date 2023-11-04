@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".TrangChu">
+    android:layout_height="match_parent">
+
+
     <LinearLayout
+        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="#4858C8"
         android:orientation="horizontal">
 
@@ -83,4 +84,68 @@
                 android:textSize="16dp" />
         </LinearLayout>
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/dangnhap_anhnen" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:alpha="0.75"
+        app:cardCornerRadius="20dp"
+        >
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="Hiện có"
+            android:textColor="#596AFF"
+            android:textSize="22dp"/>
+        <TextView
+            android:id="@+id/SoTienHienCo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:text="0"
+            android:textColor="#596AFF"
+            android:textStyle="bold"
+            android:textSize="26dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/Btn_addThuNhap"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="#596AFF"
+        android:text="+ Thu Nhập" />
+
+    <Button
+        android:id="@+id/Btn_addChiTieu"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="215dp"
+        android:backgroundTint="#D742F1"
+        android:text="- Chi Tiêu" />
+    <Button
+        android:id="@+id/buttonPickDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="60dp"
+        android:text="Pick Date" />
+
+
+</RelativeLayout>

@@ -52,7 +52,7 @@
                 android:hint="Nhập tên khoản thu"
                 android:inputType="text"
                 android:textAlignment="center"
-                android:textColor="#FFFFFF" />
+                android:textColor="#000000" />
 
         </LinearLayout>
 
@@ -73,7 +73,7 @@
                 android:hint="Nhập số thu nhập"
                 android:inputType="text"
                 android:textAlignment="center"
-                android:textColor="#FFFFFF" />
+                android:textColor="#000000" />
         </LinearLayout>
 
         <TextView
@@ -108,10 +108,11 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:backgroundTint="#FFFFFF"
+                android:text="Nhận lương"
                 android:textAlignment="viewStart"
                 android:textColor="#000000"
                 android:textSize="18sp"
-                tools:text="Nhận lương" />
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -151,7 +152,7 @@
             android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/Btn_CfThuNhap"
             android:layout_width="319dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
